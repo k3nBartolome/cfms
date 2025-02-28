@@ -37,6 +37,7 @@ class Requirements extends Model
         'peme_final_status',
         'peme_last_updated_at',
         'peme_updated_by',
+        'peme_vendor',
         // SSS Section
         'sss_proof_submitted_type',
         'sss_final_status',
@@ -112,6 +113,7 @@ class Requirements extends Model
         'oig_updated_by',
         // CIBI Section
         'cibi_checked_date',
+        'cibi_search_date',
         'cibi_final_status',
         'cibi_remarks',
         'cibi_file_name',
@@ -125,6 +127,7 @@ class Requirements extends Model
         'bgc_file_name',
         'bgc_last_updated_at',
         'bgc_updated_by',
+        'bgc_vendor',
         // BC Section
         'birth_certificate_file_name',
         'birth_certificate_submitted_date',

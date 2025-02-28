@@ -103,7 +103,9 @@ import ProgramManagementGuatemala from "@/views/Dashboard/AppProgramDashboardGua
 import RemxSupplyManager from "@/views/DashboardNavItems/User/InventoryTracker/RemxSupplyManager.vue";
 import remxTransfer from "@/views/DashboardNavItems/User/InventoryTracker/RemxSiteTransferRequest.vue";
 import Onboarding from "@/views/DashboardNavItems/User/Onboarding/OnboardingMainPage.vue";
+import OnboardingMainPageNew from "@/views/DashboardNavItems/User/Onboarding/OnboardingMainPageNew.vue";
 import OnboardingForm from "@/views/DashboardNavItems/User/Onboarding/OnboardingForm.vue";
+import OnboardingFormNew from "@/views/DashboardNavItems/User/Onboarding/OnboardingFormNew.vue";
 import OnboardingUpdateForm from "@/views/DashboardNavItems/User/Onboarding/OnboardingUpdateForm.vue";
 import OnboardingNBI from "@/views/DashboardNavItems/User/Onboarding/OnboardingNBI.vue";
 import OnboardingDT from "@/views/DashboardNavItems/User/Onboarding/OnboardingDT.vue";
@@ -192,7 +194,7 @@ const routes = [
         name: "usermanagement",
         component: UserManagement,
       },
-     
+
       {
         path: "/",
         name: "SrManager",
@@ -495,6 +497,28 @@ const routes = [
       },
       {
         path: "/",
+        component: OnboardingMainPageNew,
+        meta: {
+          requiresAuth: true,
+          requiresRoles: ["onboarding","user"],
+        },
+        children: [
+          {
+            path: "/onboarding_list",
+            name: "OnboardingFormNew",
+            component: OnboardingFormNew,
+          },
+         
+          {
+            path: "onboarding_list/update/:id",
+            name: "OnboardingUpdateForm",
+            component: OnboardingUpdateForm,
+            props: true,
+          },
+        ],
+      },
+      {
+        path: "/",
         component: Onboarding,
         meta: {
           requiresAuth: true,
@@ -511,13 +535,9 @@ const routes = [
             name: "OnboardingForm",
             component: OnboardingForm,
           },
-    
-          {
-            path: "onboarding_dashboard/update/:id",
-            name: "OnboardingUpdateForm",
-            component: OnboardingUpdateForm,
-            props: true,
-          },
+          
+
+         
           {
             path: "onboarding_dashboard/employee_details/:id",
             name: "OnboardingEmployeeProfile",
@@ -851,7 +871,7 @@ const routes = [
       },
     ],
   },
- 
+
 
   {
     path: "/auth",

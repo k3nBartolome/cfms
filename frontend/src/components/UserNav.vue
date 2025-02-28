@@ -15,7 +15,8 @@
                   v-if="isUser || isSourcing"
                   >Capacity File</router-link
                 >
-                <router-link v-if="isUser || isBudget || isRemx || isSourcing"
+                <router-link
+                  v-if="isUser || isBudget || isRemx || isSourcing"
                   to="/staffing"
                   class="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700 hover:text-white link-button truncate"
                   >Staffing Tracker</router-link
@@ -38,7 +39,8 @@
                   @mouseleave="closeDropdown"
                   @click="toggleDropdown"
                 >
-                  <button v-if="isUser || isBudget || isRemx || isSourcing"
+                  <button
+                    v-if="isUser || isBudget || isRemx || isSourcing"
                     class="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700 hover:text-white"
                   >
                     Inventory Tracker
@@ -166,6 +168,11 @@
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                       role="menuitem"
                       >Onboarding Tool</router-link
+                    > <router-link
+                      to="/onboarding_list"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                      role="menuitem"
+                      >Employee List</router-link
                     >
                     <router-link
                       to="/onboarding_user_management"
@@ -202,7 +209,8 @@
                   @mouseleave="closeDropdown"
                   @click="toggleDropdown"
                 >
-                  <button v-if="isUser || isBudget || isRemx || isSourcing"
+                  <button
+                    v-if="isUser || isBudget || isRemx || isSourcing"
                     class="px-3 py-2 text-sm font-medium rounded-md hover:bg-gray-700 hover:text-white"
                   >
                     Admin
@@ -321,7 +329,7 @@
             H&S Tool
           </router-link>
           <!-- Inventory Tracker Dropdown -->
-          <div class="pt-2 " v-if="isUser || isBudget || isRemx || isSourcing">
+          <div class="pt-2" v-if="isUser || isBudget || isRemx || isSourcing">
             <span class="block px-3 py-2 text-base font-medium text-gray-600"
               >Inventory Tracker</span
             >
@@ -398,7 +406,7 @@
               >OSS Referr</router-link
             >
           </div>
-         
+
           <div class="pt-2" v-if="isUser || isOnboarding">
             <span class="block px-3 py-2 text-base font-medium text-gray-600 link-button"
               >Onboarding</span
@@ -409,12 +417,19 @@
               role="menuitem"
               >Onboarding Tool</router-link
             >
+
             <router-link
-                      to="/onboarding_user_management"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                      >User Management</router-link
-                    >
+              to="/onboarding_user_management"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+              >User Management</router-link
+            >
+            <router-link
+              to="/onboarding_list"
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              role="menuitem"
+              >Employee List</router-link
+            >
           </div>
           <div class="pt-2" v-if="isUser || isFrontdesk || isOnboarding">
             <span class="block px-3 py-2 text-base font-medium text-gray-600 link-button"
@@ -429,7 +444,7 @@
           </div>
 
           <!-- Admin Dropdown -->
-          <div class="pt-2 " v-if="isUser || isBudget || isRemx || isSourcing">
+          <div class="pt-2" v-if="isUser || isBudget || isRemx || isSourcing">
             <span class="block px-3 py-2 text-base font-medium text-gray-600">Admin</span>
             <router-link
               to="/site_management"

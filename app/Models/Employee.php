@@ -29,6 +29,11 @@ class Employee extends Model
         'employee_added_by',
         'updated_by',
         'qr_code_path',
+        'contract',
+        'with_findings',
+        'date_endorsed_to_compliance',
+        'return_to_hs_with_findings',
+        'last_received_from_hs_with_findings'
     ];
 
     // Relationship with the Requirement model (assuming employee_tbl_id is the foreign key)
