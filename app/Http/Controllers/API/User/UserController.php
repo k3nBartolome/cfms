@@ -28,12 +28,21 @@ class UserController extends Controller
    }
    
 
-    public function index()
-    {
-        $users = User::with('sites')->paginate(10); // Paginate 10 users per page
-    
-        return UserResource::collection($users);
-    }
+   public function index(Request $request)
+   {
+       // Get query parameters
+       $searchQuery = $request->query('search', '');
+
+       // Query users with search and pagination
+       $users = User::with('sites')
+           ->when($searchQuery, function ($query) use ($searchQuery) {
+               return $query->where('name', 'like', "%{$searchQuery}%")
+                   ->orWhere('email', 'like', "%{$searchQuery}%");
+           })
+           ->paginate(10);
+
+       return UserResource::collection($users);
+   }
     public function indexUser(Request $request)
 {
     $query = User::with('sites');

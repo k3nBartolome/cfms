@@ -160,7 +160,8 @@
                 disabled
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="JAN">JAN</option>
                 <option value="FEB">FEB</option>
                 <option value="MAR">MAR</option>
@@ -185,7 +186,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="Active">Active</option>
                 <option value="Inactive">Inactive</option>
                 <option value="Separated">Separated</option>
@@ -201,7 +203,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="Hired">Hired</option>
                 <option value="To be Hired">To be Hired</option>
               </select>
@@ -228,7 +231,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="Agent">Agent</option>
                 <option value="Non-Agent">Non-Agent</option>
               </select>
@@ -352,7 +356,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option disabled>Please select one</option>
+              <option disabled>Please select one</option>
+              <option value=""></option>
                 <option value="COMPLETE">COMPLETE</option>
                 <option value="WITH FINDINGS">WITH FINDINGS</option>
                 <option value="PENDING">PENDING</option>
@@ -378,7 +383,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option disabled>Please select one</option>
+                 <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="COMPLETE">COMPLETE</option>
                 <option value="WITH FINDINGS">WITH FINDINGS</option>
               </select>
@@ -392,7 +398,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option disabled>Please select one</option>
+                 <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="DONE - WORKDAY">DONE - WORKDAY</option>
                 <option value="DONE - MANUAL">DONE - MANUAL</option>
                 <option value="PENDING">PENDING</option>
@@ -407,7 +414,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="PHYSICAL">PHYSICAL</option>
                 <option value="WORKDAY">WORKDAY</option>
                 <option value="NO">NO</option>
@@ -422,7 +430,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="WITH FINDINGS">WITH FINDINGS</option>
                 <option value="N/A">N/A</option>
               </select>
@@ -469,7 +478,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option>Select one</option>
+                <option disabled>Please select one</option>
+                <option value=""></option>
                 <option value="COMPLETE">COMPLETE</option>
                 <option value="INCOMPLETE-PERS">INCOMPLETE-PERS</option>
                 <option value="WITH FINDINGS">WITH FINDINGS</option>
@@ -551,7 +561,8 @@
                 :disabled="!isEditable"
                 class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               >
-                <option disabled value="">Please select Site</option>
+                 <option disabled>Please select one</option>
+                <option value=""></option>
                 <option
                   v-for="regions in regions"
                   :key="regions"
@@ -702,7 +713,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">Yes</option>
                     <option value="NO">No</option>
                     <option value="NO - HIT RECEIPT">NO - HIT RECEIPT</option>
@@ -888,7 +900,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="NEGATIVE">NEGATIVE</option>
                     <option value="POSITIVE - FOR CONFIRMATORY">
                       POSITIVE - FOR CONFIRMATORY
@@ -1063,7 +1076,8 @@
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     @change="updatePemeData"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="COMPLETE">COMPLETE</option>
                     <option value="INCOMPLETE">INCOMPLETE</option>
                     <option value="BLANK">BLANK</option>
@@ -1130,7 +1144,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="FIT TO WORK">FIT TO WORK</option>
                     <option value="UNFIT TO WORK">UNFIT TO WORK</option>
                     <option value="INCOMPLETE - PENDING DT">
@@ -1278,7 +1293,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
                     <option value="PENDING PROOF">PENDING PROOF</option>
@@ -1311,7 +1327,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="E-FORM">E-FORM</option>
                     <option value="NUMBER SLIP">NUMBER SLIP</option>
                     <option value="PERSONAL RECORD">PERSONAL RECORD</option>
@@ -1471,7 +1488,8 @@
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     @change="updatePhicData"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
                     <option value="PENDING PROOF">PENDING PROOF</option>
@@ -1502,7 +1520,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="ID">ID</option>
                     <option value="MDR">MDR</option>
                     <option value="PIN SLIP">PIN SLIP</option>
@@ -1657,7 +1676,8 @@
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     @change="updatePagibigData"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
                     <option value="PENDING PROOF">PENDING PROOF</option>
@@ -1690,7 +1710,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="ID">ID</option>
                     <option value="MDF">MDF</option>
                     <option value="PROCESSED MCIF">PROCESSED MCIF</option>
@@ -1846,7 +1867,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
                     <option value="NO - FOR ORUS">NO - FOR ORUS</option>
@@ -1878,7 +1900,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="ID">ID</option>
                     <option value="STAMPED VERIFICATION SLIP">
                       STAMPED VERIFICATION SLIP
@@ -2032,9 +2055,11 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
+                    <option value="N/A">N/A</option>
                   </select>
                 </div>
 
@@ -2187,7 +2212,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="YES">YES</option>
                     <option value="NO">NO</option>
                     <option value="N/A">N/A</option>
@@ -2343,7 +2369,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="CLEARED BEFORE DAY 1">
                       CLEARED BEFORE DAY 1
                     </option>
@@ -2491,7 +2518,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="CLEARED BEFORE DAY 1">
                       CLEARED BEFORE DAY 1
                     </option>
@@ -2639,7 +2667,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="CLEARED BEFORE DAY 1">
                       CLEARED BEFORE DAY 1
                     </option>
@@ -2786,7 +2815,8 @@
                     v-model="cibi_final_status"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="CLEARED BEFORE DAY 1">
                       CLEARED BEFORE DAY 1
                     </option>
@@ -2943,7 +2973,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="CLEARED BEFORE DAY 1">
                       CLEARED BEFORE DAY 1
                     </option>
@@ -2988,7 +3019,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="ENDORSED">ENDORSED</option>
                     <option value="COMPLETE">COMPLETE</option>
                     <option value="INCOMPLETE">INCOMPLETE</option>
@@ -3018,7 +3050,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="PENDING RESULT">PENDING RESULT</option>
                     <option value="FINAL REPORT">FINAL REPORT</option>
                     <option value="SCHOOL">SCHOOL</option>
@@ -3142,7 +3175,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="PSA">PSA</option>
                     <option value="NSO">NSO</option>
                     <option value="Certified true copy">
@@ -3290,7 +3324,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="PSA">PSA</option>
                     <option value="NSO">NSO</option>
                     <option value="Certified true copy">
@@ -3438,7 +3473,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="PSA">PSA</option>
                     <option value="NSO">NSO</option>
                     <option value="Certified true copy">
@@ -3584,7 +3620,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="School Id">School Id</option>
                     <option value="Diploma">Diploma</option>
                     <option value="TOR">TOR</option>
@@ -3731,7 +3768,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="Resignation Letter">
                       Resignation Letter
                     </option>
@@ -3882,7 +3920,8 @@
                     :disabled="!isEditable"
                     class="w-full p-2 mt-1 text-sm text-gray-600 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option disabled>Please select one</option>
+                     <option disabled>Please select one</option>
+                <option value=""></option>
                     <option value="Affidavit of same person">
                       Affidavit of same person
                     </option>
@@ -4018,12 +4057,12 @@
         class="bg-white rounded-lg shadow-lg w-11/12 md:w-5/6 lg:w-4/5 xl:w-3/4 max-h-[90vh] overflow-y-auto"
       >
         <!-- Modal Header -->
-        <div class="p-4 border-b relative">
+        <div class="relative p-4 border-b">
           <h3 class="text-lg font-medium text-gray-900">Employee List</h3>
           <button
             type="button"
             @click="closeEmployeeModal"
-            class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 z-50"
+            class="absolute z-50 p-2 text-gray-500 top-2 right-2 hover:text-gray-700"
           >
             &times;
             <!-- Close icon -->
