@@ -269,6 +269,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post('upload_employees', [EmployeeController::class, 'storeEmployees']);
     Route::get('employees', [EmployeeController::class, 'index']);
     Route::get('employees_data/{site_id?}', [EmployeeController::class, 'indexEmployees']);
+    Route::get('employees_modal_data/{site_id?}', [EmployeeController::class, 'indexModalEmployees']);
     Route::post('update/nbi/requirement/{id}', [EmployeeController::class, 'updateNbi']);
     Route::post('update/dt/requirement/{id}', [EmployeeController::class, 'updateDT']);
     Route::post('update/peme/requirement/{id}', [EmployeeController::class, 'updatePEME']);
@@ -350,4 +351,3 @@ Route::get('ref_v1_export', [ClassesController::class, 'referralsDatev1']);
 Route::get('/applicant-sites', [ApplicantSiteController::class, 'index']);
 Route::get('/applicant-sites/{id}', [ApplicantSiteController::class, 'show']);
 Route::post('/applicant/create', [ApplicantDataController::class, 'store']);
-

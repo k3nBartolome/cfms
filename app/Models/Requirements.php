@@ -122,6 +122,7 @@ class Requirements extends Model
         // BGC Section
         'bgc_endorsed_date',
         'bgc_results_date',
+        'bgc_results',
         'bgc_final_status',
         'bgc_remarks',
         'bgc_file_name',

@@ -26,13 +26,13 @@ class EmployeeImport implements ToModel, WithHeadingRow
     public function model(array $row)
     {
         // Start a database transaction to ensure atomic operations
-        DB::beginTransaction();
+       /*  DB::beginTransaction(); */
 
         try {
-            // Skip the row if the email already exists in the database
+            // Check if the email already exists in the database
             if (!empty($row['email']) && Employee::where('email', $row['email'])->exists()) {
                 Log::info('Skipping row due to existing email:', ['email' => $row['email']]);
-                return null;
+                return null; // Skip this row
             }
 
             // Convert Excel serial date values to Y-m-d format
@@ -97,8 +97,9 @@ class EmployeeImport implements ToModel, WithHeadingRow
             ]);
 
             // Commit the transaction
-            DB::commit();
+          /*   DB::commit(); */
 
+            Log::info('New employee added:', ['email' => $row['email']]);
             return $employee; // Return the employee model
         } catch (\Exception $e) {
             // Rollback transaction on error
@@ -107,6 +108,7 @@ class EmployeeImport implements ToModel, WithHeadingRow
             return null;
         }
     }
+
 
     /**
      * Convert Excel date serial number to a string date in Y-m-d format
